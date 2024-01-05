@@ -1,3 +1,3 @@
-export async function onRequest() {
-	return new Response("Tous les dinosaures sont allés à la fête 🎉");
+export async function onRequest(context) {
+	return new Response(`Tous les ${context.env.DINOS} sont allés à la fête 🎉`);
 }

@@ -1,3 +1,0 @@
-const e=document.querySelector(".btn-send-message"),t=document.querySelector(".btn-send-emoji");e?.addEventListener("click",async()=>{let e=await fetch("/message",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:"Tous les dinosaures viennent \xe0 la f\xeate!"})});alert(await e.text())}),t?.addEventListener("click",async()=>{let e=await fetch("/api/emoji",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({emoji:"\uD83E\uDD95"})});alert(await e.text())});//# sourceMappingURL=index.a80ad306.js.map
-
-//# sourceMappingURL=index.a80ad306.js.map
